@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku Solver | SCT_SD_3</title>
+    <meta
+      name="description"
+      content="A Sudoku puzzle solver built with HTML, CSS, and JavaScript for the Skillcraft Technology Software Development Internship."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1 class="title">Sudoku Solver</h1>
+        <p class="subtitle">
+          Enter the numbers and let the algorithm solve it for you
+        </p>
+      </header>
+
+      <div class="card">
+        <div class="grid-wrapper">
+          <table class="sudoku-grid" id="sudoku-grid">
+            <tbody id="grid-body"></tbody>
+          </table>
+        </div>
+
+        <div class="controls">
+          <button class="btn btn-primary" id="btn-solve">Solve</button>
+          <button class="btn btn-secondary" id="btn-clear">Clear</button>
+        </div>
+
+        <div class="examples">
+          <p class="examples-label">Load example:</p>
+          <div class="example-buttons">
+            <button class="btn-example" data-example="easy">Easy</button>
+            <button class="btn-example" data-example="medium">Medium</button>
+            <button class="btn-example" data-example="hard">Hard</button>
+          </div>
+        </div>
+
+        <p class="status" id="status">Enter numbers and click Solve</p>
+      </div>
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
